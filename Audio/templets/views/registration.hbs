@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{{>headerLinks}}
+    <style>
+      #1234{
+        display: none;
+      }
+    </style>
+</head>
+
+<body>
+    {{>navbar}}
+	   <h1>to upload adiuo </h1>
+	   <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="text" placeholder="username" name="user"/>
+        <input type="file" name="myfile" id=""/>
+        <button type="submit">submit</button>
+       
+    </form>
+    <h1>to listen audio</h1>
+	  <form action="/retrive" method="POST"  >
+        <input type="text" placeholder="username" name="user"/>
+        {{!-- <input type="file" name="myfile" id=""/> --}}
+        <button type="submit" onclick="myfun()">submit</button>
+       
+    </form>
+    <audio id="1234" controls >
+        <source src="/{{filename}}" type="audio/mp3">
+    </audio>
+   {{>footer}}
+    {{>footer}}
+    <script>
+        function myfun = ()=>{
+       document.getElementById("1234").display=flex;
+        }
+    </script>
+</body>
+</html>
