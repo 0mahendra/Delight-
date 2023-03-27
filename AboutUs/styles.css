@@ -12,7 +12,7 @@ body {
     /* The image used */
     background-color: #E8E2E2;
     /* Used if the image is unavailable */
-    height: 500px;
+    height: 700px;
     /* You must set a specified height */
     background-position: center;
     /* Center the image */
@@ -84,7 +84,7 @@ body {
       transform: rotate(0);
     }
   }
-  .us{
+  /* .us{
     height: auto;
     max-width: 120%;
     border-radius: 100%;
@@ -92,10 +92,17 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-    /* height:450px;
-      padding:50px; */
+    
     margin-top: 30px;
     margin-bottom: 20px;
+  } */
+  .row{
+    padding:20px;
+    padding-bottom:30px ;
+  }
+  .card-img-top{
+    /* width: auto; */
+    size:5%;
   }
   
   
