@@ -12,7 +12,7 @@ body {
     /* The image used */
     background-color: #E8E2E2;
     /* Used if the image is unavailable */
-    height: 700px;
+    height: 800px;
     /* You must set a specified height */
     background-position: center;
     /* Center the image */
@@ -105,6 +105,9 @@ body {
   .card-deck{
     padding: 20px;
     border-bottom: 20px;
+  }
+  .card-title{
+    text-align: center;
   }
   .card-body{
     padding:10%;
