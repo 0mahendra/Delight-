@@ -20,7 +20,7 @@ body {
     /* Do not repeat the image */
     background-size: cover;
     /* Resize the background image to cover the entire container */
-    color:white;
+    
   }
   
   
@@ -97,12 +97,19 @@ body {
     margin-bottom: 20px;
   } */
   .row{
-    padding:20px;
-    padding-bottom:30px ;
+    padding:100px;
   }
   .card-img-top{
-    /* width: auto; */
-    size:5%;
+    height:450px;
   }
+  .card-deck{
+    padding: 20px;
+    border-bottom: 20px;
+  }
+  .card-body{
+    padding:10%;
+  }
+  
+  
   
   
