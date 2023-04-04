@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        body {
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/11/Calm-Full-HD-Wallpaper.jpg");
+
+  background-color: #ECF2FF;
+  background-size: cover;
+
+}
+
+
+.colored-section {
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/11/Calm-Full-HD-Wallpaper.jpg");
+  /* The image used */
+  background-color: #E8E2E2;
+  /* Used if the image is unavailable */
+  height: 500px;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  color:white;
+}
+
+
+
+.navbar {
+  margin-top: 30px;
+  font-weight: bolder;
+  font-family: "Montserrat-Bold";
+}
+
+.giantt {
+  /* width:auto;
+    height:400px; */
+  max-width: 40%;
+}
+
+#features {
+  position: relative;
+  background-color: whitesmoke;
+  color: black;
+}
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #92B4EC;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #1C6DD0;
+}
+
+#features {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Testimonial Section */
+#testimonials {
+  text-align: center;
+}
+
+.testimonial-text {
+  padding-top: 120px;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-right: 100px;
+  margin-left: 100px;
+  /* font-family: "Montserrat-bold"; */
+  color: white;
+
+}
+
+.name {
+  font-size: larger;
+  font-weight: bolder;
+  /* margin-top: 15px; */
+  color: white;
+}
+
+.testimonial-image {
+
+  height: auto;
+  max-width: 24%;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  /* height:450px;
+    padding:50px; */
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.container-fluid {
+  padding-bottom: 0px;
+}
+
+/* call to action section */
+#cta {
+  padding: 80px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.big-heading {
+  padding: 30px;
+}
+
+
+/* Footer Section */
+
+#footer {
+  text-align: center;
+  height: fit-content;
+  padding: 30px;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+    </style>
+  </head>
+
+  <body>
+   {{>Navbar}}
+    <section class="colored-section" id="testimonials">
+      <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <h2 class="testimonial-text">Meditation is being in tune with our inner universe.</h2>
+            <img class="testimonial-image" src="https://chopra.brightspotcdn.com/ba/5b/a4e607054e908c357b72c88d4102/7fbroqcg.jpeg" alt="dog-profile">
+            <em class="name">Meditation</em>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">Journal writing is a voyage to the interior.</h2>
+            <img class="testimonial-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM6nXdkThT_qsgZ-r7ZSsBXf-kk6-rdZAOGQ&usqp=CAU" alt="lady-profile">
+            <em class="name">Journal</em>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">No desired achievement is gained without any goal setting.</h2>
+            <img class="testimonial-image" src="https://cdn2.hubspot.net/hubfs/53/To_Do_List.png" alt="lady-profile">
+            <em class="name">To Do List</em>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+    </section>
+    <!-- Call to Action -->
+
+    <section class="white-section" id="cta">
+
+      <div class="container-fluid">
+
+        <h3 class="big-heading">There is a crack in everything thats how the light gets in!</h3>
+      </div>
+    </section>
+    <section class="colored-section " id="testimonials">
+      <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <h2 class="testimonial-text">Do not let others behavior destroy your inner peace</h2>
+            <img class="testimonial-image" src="https://media.cntraveller.com/photos/611bed66623b149193c8cd74/4:3/w_1704,h_1278,c_limit/dalai-lama-conde-nast-traveller-25nov16-rex-shutterstock.jpg" alt="dog-profile">
+            <em class="name">Dalai Lama</em>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">You are not alone..You are not the first to go through it..You will not be the last to go through it</h2>
+            <img class="testimonial-image" src="https://media.vanityfair.com/photos/5b46274a6520f70b78e5cfe5/master/pass/The-Rock-2020-Potential-Run.jpg" alt="lady-profile">
+            <em class="name">The Rock</em>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">Calmness,gentleness,silence,self-restraint and purity..These are the disciplines of the mind</h2>
+            <img class="testimonial-image" src="https://wallpapers.com/images/hd/shri-krishna-day-and-night-silhouette-2j5guszveuuuhtwo.jpg" alt="lady-profile">
+            <em class="name">Shri Krishna</em>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+    </section>
+    
+    <section class="white-section" id="features">
+
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="feature-box col-lg-4">
+            <i class="icon fas fa-check-circle fa-4x">
+              <a href="../AboutUs/index.html">
+                <h3 class="feature-title">About us.</h3>
+                <span class="link"></span>
+              </a>
+            </i>
+          
+           
+            
+            <p>Do not let others behavior destroy your inner peace</p>
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <i class="icon fas fa-dollar-sign fa-4x"></i>
+            <h3 class="feature-title">Help</h3>
+            <p>Service before Self is our motive</p>
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <i class="fa-solid icon fas fa-4x fa-bolt"></i>
+            <h3 class="feature-title">FAQ</h3>
+            <p>The site's smooth as butter,even the giants dont stutter.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="colored-section" id="footer">
+      <p>Contact Us</p>
+      <div class="container-fluid">
+        <i class="social-icon fab fa-facebook-f"></i>
+        <i class="social-icon fab fa-twitter"></i>
+        <i class="social-icon fab fa-instagram"></i>
+        <i class="social-icon fas fa-envelope"></i>
+
+      </div>
+    </footer>
+
+  </body>
+
+</html>
