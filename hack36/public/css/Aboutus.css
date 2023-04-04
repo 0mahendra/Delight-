@@ -1,0 +1,118 @@
+body {
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/11/Calm-Full-HD-Wallpaper.jpg");
+  
+    background-color: #ECF2FF;
+    background-size: cover;
+  
+  }
+  
+  
+  .colored-section {
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/11/Calm-Full-HD-Wallpaper.jpg");
+    /* The image used */
+    background-color: #E8E2E2;
+    /* Used if the image is unavailable */
+    height: 800px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    
+  }
+  
+  
+  
+  .navbar {
+    margin-top: 30px;
+    font-weight: bolder;
+    font-family: "Montserrat-Bold";
+  }
+  
+  .giantt {
+    /* width:auto;
+      height:400px; */
+    max-width: 40%;
+  }
+  
+  #features {
+    position: relative;
+    background-color: whitesmoke;
+    color: black;
+  }
+  .feature-title {
+    font-size: 1.5rem;
+  }
+  
+  .feature-box {
+    padding: 4.5%;
+  }
+  
+  .icon {
+    color: #92B4EC;
+    margin-bottom: 1rem;
+  }
+  
+  .icon:hover {
+    color: #1C6DD0;
+  }
+  
+  #features {
+    padding: 40px;
+    text-align: center;
+  }
+  #footer {
+    text-align: center;
+    height: fit-content;
+    padding: 30px;
+  }
+  
+  .social-icon {
+    margin: 20px 10px;
+  }
+  
+  @media (max-width: 1028px) {
+  
+    #title {
+      text-align: center;
+    }
+  
+    .title-image {
+      position: static;
+      transform: rotate(0);
+    }
+  }
+  /* .us{
+    height: auto;
+    max-width: 120%;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    
+    margin-top: 30px;
+    margin-bottom: 20px;
+  } */
+  .row{
+    padding:100px;
+  }
+  .card-img-top{
+    height:450px;
+  }
+  .card-deck{
+    padding: 20px;
+    border-bottom: 20px;
+  }
+  .card-title{
+    text-align: center;
+  }
+  .card-body{
+    padding:10%;
+  }
+  
+  
+  
+  
