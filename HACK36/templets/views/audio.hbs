@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{{>headerLinks}}
+    <style>
+      #1234{
+        display: none;
+      }
+      body {
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/11/Calm-Full-HD-Wallpaper.jpg");
+  
+    background-color: #ECF2FF;
+    background-size: cover;
+  
+  }
+  
+  
+  .colored-section {
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/11/Calm-Full-HD-Wallpaper.jpg");
+    /* The image used */
+    background-color: #E8E2E2;
+    /* Used if the image is unavailable */
+    height: 500px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    color:white;
+  }
+  
+  
+  
+  .navbar {
+    margin-top: 30px;
+    font-weight: bolder;
+    font-family: "Montserrat-Bold";
+  }
+  
+  .giantt {
+    /* width:auto;
+      height:400px; */
+    max-width: 40%;
+  }
+  
+  #features {
+    position: relative;
+    background-color: whitesmoke;
+    color: black;
+  }
+  .feature-title {
+    font-size: 1.5rem;
+  }
+  
+  .feature-box {
+    padding: 4.5%;
+  }
+  
+  .icon {
+    color: #92B4EC;
+    margin-bottom: 1rem;
+  }
+  
+  .icon:hover {
+    color: #1C6DD0;
+  }
+  
+  #features {
+    padding: 40px;
+    text-align: center;
+  }
+  #footer {
+    text-align: center;
+    height: fit-content;
+    padding: 30px;
+  }
+  
+  .social-icon {
+    margin: 20px 10px;
+  }
+  
+  @media (max-width: 1028px) {
+  
+    #title {
+      text-align: center;
+    }
+  
+    .title-image {
+      position: static;
+      transform: rotate(0);
+    }
+  }
+  .us{
+    height: auto;
+    max-width: 120%;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    /* height:450px;
+      padding:50px; */
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  
+    </style>
+</head>
+
+<body>
+   
+    <section class="navv">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Audio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+           
+            <li class="nav-item">
+              <a class="nav-link" href="../HomePage/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Meditation/index.html">Meditation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Journal/index.html">Journals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../ToDo/index.html">To-Do</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../ProfilePage/index.html">Profile</a>
+            </li>
+
+          </ul>
+        </div>
+        <ul>
+          <li class="nav-item dropdown">
+
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section class="colored-section" id="colored">
+        <div class="row">
+            <div class="col">
+              1 to 3
+            </div>
+            <div class="col">
+                <img class="us" src="" alt="">
+              2 of 3
+            </div>
+            <div class="col">
+                <img class="us" src="" alt="">
+              3 of 3
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <section class="white-section" id="features">
+
+      <div class="container-fluid">
+
+        <div class="row">
+          
+          <div class="feature-box col-lg-6">
+            <i class="icon fas fa-dollar-sign fa-4x"></i>
+            <h3 class="feature-title">Help</h3>
+            <p>Service before Self is our motive</p>
+          </div>
+
+          <div class="feature-box col-lg-6">
+            <i class="fa-solid icon fas fa-4x fa-bolt"></i>
+            <h3 class="feature-title">FAQ</h3>
+            <p>The site's smooth as butter,even the giants dont stutter.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+   
+
+  
+	   <h1>to upload adiuo </h1>
+	   <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="text" placeholder="username" name="user"/>
+        <input type="file" name="myfile" id=""/>
+        <button type="submit">submit</button>
+       
+    </form>
+    <h1>to listen audio</h1>
+	  <form action="/retrive" method="POST"  >
+        <input type="text" placeholder="username" name="user"/>
+        {{!-- <input type="file" name="myfile" id=""/> --}}
+        <button type="submit" onclick="myfun()">submit</button>
+       
+    </form>
+    <audio id="1234" controls >
+        <source src="/{{filename}}" type="audio/mp3">
+    </audio>
+  
+    
+    <script>
+        function myfun = ()=>{
+       document.getElementById("1234").display=flex;
+        }
+    </script>'
+     <footer class="colored-section" id="footer">
+      <p>Contact Us</p>
+      <div class="container-fluid">
+        <i class="social-icon fab fa-facebook-f"></i>
+        <i class="social-icon fab fa-twitter"></i>
+        <i class="social-icon fab fa-instagram"></i>
+        <i class="social-icon fas fa-envelope"></i>
+
+      </div>
+    </footer>
+</body>
+</html>
