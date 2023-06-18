@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/public/css/ToDo.css" type="text/css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<style>
+		.navbar {
+    margin-top: 30px;
+    font-weight: bolder;
+    font-family: "Montserrat-Bold";
+  }
+  body {
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/11/Calm-Full-HD-Wallpaper.jpg");
+    /* The image used */
+    background-color:#FEFAE0 ;
+    /* Used if the image is unavailable */
+    height: 300px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: repeat;
+    /* Do not repeat the image */
+    margin-top: 20px;
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+#footer {
+    text-align: center;
+    height: fit-content;
+    padding: 30px;
+  }
+  
+  .social-icon {
+    margin: 20px 10px;
+  }
+  
+  @media (max-width: 1028px) {
+  
+    #title {
+      text-align: center;
+    }
+  
+    .title-image {
+      position: static;
+      transform: rotate(0);
+    }
+  }
+
+  /*to do vaael ki body*/
+  :root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: var(--dark);
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: auto;
+    color:#F6F1F1;
+    text-align: center;
+}
+
+header h1{ 
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: white;
+	margin-bottom: 1rem;
+   
+}
+#new-task-form {
+	display: flex;;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-task-input {
+	flex: 1 1 0%;
+	background-color: var(--darker);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--light);
+	font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+	color: white;
+}
+
+#new-task-submit {
+	color: var(--pink);
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#new-task-submit:hover {
+	opacity: 0.8;
+}
+
+#new-task-submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color:white;
+	margin-bottom: 1rem;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--darkest);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: var(--light);
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color: var(--pink);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .edit {
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete {
+	color: crimson;
+}
+
+/*feature*/
+#features {
+    position: relative;
+    background-color: whitesmoke;
+    color: black;
+  }
+  .feature-title {
+    font-size: 1.5rem;
+  }
+  
+  .feature-box {
+    padding: 4.5%;
+  }
+  
+  .icon {
+    color: #92B4EC;
+    margin-bottom: 1rem;
+  }
+  
+  .icon:hover {
+    color: #1C6DD0;
+  }
+  
+  #features {
+    padding: 40px;
+    text-align: center;
+  }
+  #bi{
+    text-align: center;
+    padding: 5%;
+
+  }
+  .ip{
+    background-color: whitesmoke;
+  }
+  .hi{
+    text-align: center;
+    padding:2%;
+  }
+  .yeah{
+    padding-bottom: 15px;
+  }
+    #titleee{
+        padding: 10px;
+    }
+    .hue{
+        padding: 5px;
+    }
+	</style>
+  </head>
+<body>
+    
+    {{>Navbar}}
+    <div id="bi">
+        <h1 id="titleee">How does this section work</h1>
+        <h6>Self-help or self-improvement is a self-guided improvement[1]—economically, physically, intellectually, and emotionally—often with a substantial psychological basis.
+
+When engaged in self-help, people often use publicly available information or support groups, on the Internet as well as in person, where people in similar situations join together.[1] From early examples in self-driven legal practice[2] and home-spun advice, the connotations of the word have spread and often apply particularly to education, business, exercise, psychology and psychotherapy, commonly distributed through the popular genre of self-help books. According to the APA Dictionary of Psychology, potential benefits of self-help groups that professionals may not be able to provide include friendship, emotional support, experiential knowledge, identity, meaningful roles, and a sense of belonging.[1]
+
+Many different self-help group programs exist, each with its own focus, techniques, associated beliefs, proponents and in some cases, leaders. Concepts and terms originating in self-help culture and Twelve-Step culture, such as recovery, dysfunctional families, and codependency have become firmly integrated in mainstream language.[3] Groups associated with health conditions may consist of patients and caregivers. As well as featuring long-time members sharing experiences, these health groups can become support groups and clearing-houses for educational material. Those who help themselves by learning and identifying health problems can be said to exemplify self-help, while self-help groups can be seen more as peer-to-peer or mutual-support groups.</h6>
+        </div>
+        <div class="hi">
+        <h2 class="yeah">To Upload audio </h2>
+	   <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="text" class="ip" placeholder="Username" name="user"/>
+        <input type="file" class="ip" name="myfile" id=""/>
+        <button type="button" class="btn btn-dark" type="submit">submit</button>
+        </form>
+    </div>
+    <div class="hi">
+        <h2 class="yeah">To listen to the audio you recorded !</h2>
+        <form action="/retrive" method="POST"  >
+            <input type="text" class="ip" placeholder="username" name="user"/>
+            {{!-- <input type="file" name="myfile" id=""/> --}}
+            <button type="button" class="btn btn-dark" type="submit" onclick="myfun()">submit</button>
+        
+        </form>
+        <audio class="hue" id="1234" controls >
+            <source src="/{{filename}}" type="audio/mp3">
+        </audio>
+    </div>
+    
+   
+    <script>
+        function myfun = ()=>{
+       document.getElementById("1234").display=flex;
+        }
+    </script>
+</body>
+</html>

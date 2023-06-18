@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/public/css/Aboutus.css" type="text/css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <style>
+    body {
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/11/Calm-Full-HD-Wallpaper.jpg");
+  
+    background-color: #ECF2FF;
+    background-size: cover;
+  
+  }
+  
+  
+  .colored-section {
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/11/Calm-Full-HD-Wallpaper.jpg");
+    /* The image used */
+    background-color: #E8E2E2;
+    /* Used if the image is unavailable */
+    height: 800px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    
+  }
+  
+  
+  
+  .navbar {
+    margin-top: 30px;
+    font-weight: bolder;
+    font-family: "Montserrat-Bold";
+  }
+  
+  .giantt {
+    /* width:auto;
+      height:400px; */
+    max-width: 40%;
+  }
+  
+  #features {
+    position: relative;
+    background-color: whitesmoke;
+    color: black;
+  }
+  .feature-title {
+    font-size: 1.5rem;
+  }
+  
+  .feature-box {
+    padding: 4.5%;
+  }
+  
+  .icon {
+    color: #92B4EC;
+    margin-bottom: 1rem;
+  }
+  
+  .icon:hover {
+    color: #1C6DD0;
+  }
+  
+  #features {
+    padding: 40px;
+    text-align: center;
+  }
+  #footer {
+    text-align: center;
+    height: fit-content;
+    padding: 30px;
+  }
+  
+  .social-icon {
+    margin: 20px 10px;
+  }
+  
+  @media (max-width: 1028px) {
+  
+    #title {
+      text-align: center;
+    }
+  
+    .title-image {
+      position: static;
+      transform: rotate(0);
+    }
+  }
+  /* .us{
+    height: auto;
+    max-width: 120%;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    
+    margin-top: 30px;
+    margin-bottom: 20px;
+  } */
+  .row{
+    padding:100px;
+  }
+  .card-img-top{
+    height:450px;
+  }
+  .card-deck{
+    padding: 20px;
+    border-bottom: 20px;
+  }
+  .card-title{
+    text-align: center;
+  }
+  .card-body{
+    padding:10%;
+  }
+  
+  
+  
+  
+  </style>
+  </head>
+
+  <body>
+    {{>Navbar}}
+    <section class="colored-section" id="colored">
+        <div class="row">
+            <div class="col">
+              <div class="card" >
+                <img src="/shagun.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Shagun Tiwari</h5>
+                  <p class="card-text">Tech enthusiast,sophomore and Electrical Engineering Undergrad at MNNIT Prayagraj </p>
+                </div>
+                
+              </div>
+            </div>
+          
+            <div class="col">
+                
+                <div class="card" >
+                  <img src="/mahi.jpeg" class="card-img-top" alt="..." height="600px">
+                  <div class="card-body">
+                    <h5 class="card-title">Mahendra Singh</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  
+                </div>
+               
+            </div>
+          
+            <div class="col">
+               
+              <div class="card">
+                <img src="/mansi.jpeg" class="card-img-top" alt="..." height="600px">
+                <div class="card-body">
+                  <h5 class="card-title">Mansi Singh</h5>
+                  <p class="card-text">An enthusiatic out of the box thinking,carefree,bubbly,chirpy,beautiful girl.</p>
+                </div>
+                
+              </div>
+            </div>
+          
+        </div>
+    </section>
+    
+    <section class="white-section" id="features">
+
+      <div class="container-fluid">
+
+        <div class="row">
+          
+          <div class="feature-box col-lg-6">
+            <i class="icon fas fa-dollar-sign fa-4x"></i>
+            <h3 class="feature-title">Help</h3>
+            <p>Service before Self is our motive</p>
+          </div>
+
+          <div class="feature-box col-lg-6">
+            <i class="fa-solid icon fas fa-4x fa-bolt"></i>
+            <h3 class="feature-title">FAQ</h3>
+            <p>The site's smooth as butter,even the giants dont stutter.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="colored-section" id="footer">
+      <p>Contact Us</p>
+      <div class="container-fluid">
+        <i class="social-icon fab fa-facebook-f"></i>
+        <i class="social-icon fab fa-twitter"></i>
+        <i class="social-icon fab fa-instagram"></i>
+        <i class="social-icon fas fa-envelope"></i>
+
+      </div>
+    </footer>
+
+  </body>
+
+</html>
